@@ -8,4 +8,5 @@ kanikoPythonTest{
   gitBranch = "main"
 	imageName = "python-image"
 	registryRepo = "docker-sf"
+  techName = "python"
 }
