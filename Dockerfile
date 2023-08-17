@@ -1,5 +1,8 @@
 FROM python:3.9
+#debugging
+RUN ls -altr .
 COPY requirements.txt .
+
 WORKDIR /script
 
 #COPY requirements.txt .
