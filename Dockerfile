@@ -1,6 +1,8 @@
 FROM python:3.9
 #debugging
 RUN ls -altr .
+RUN pwd
+
 COPY requirements.txt .
 
 WORKDIR /script
