@@ -6,7 +6,7 @@ WORKDIR workspace
 RUN pwd
 RUN ls -altr .
 
-COPY requirements.txt .
+COPY requirements.txt /script
 
 WORKDIR /script
 
