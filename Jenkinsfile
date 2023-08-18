@@ -7,7 +7,7 @@ kanikoPythonTest{
   gitCredentialsId = 'scm-cred-id'
   gitBranch = "main"
 	imageName = "python-image"
-	registryRepo = "test-python"
+	//registryRepo = "test-python"
   techName = "python"
   containerRegistry = "682452625784.dkr.ecr.us-east-2.amazonaws.com"
   containerRegistryCredId = "aws-cred-id-workshop"
