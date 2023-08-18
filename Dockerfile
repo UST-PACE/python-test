@@ -1,18 +1,15 @@
 FROM python:3.9
 
-#debugging
-RUN ls -altr .
+# Create app directory
+WORKDIR /app
 
-WORKDIR workspace
-RUN ls -altr .
+# Install app dependencies
+COPY requirements.txt ./
 
-COPY requirements.txt /script
-
-WORKDIR /script
-
-#COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY batch_processor.py .
+# Bundle app source
+COPY batch_processor.py /app
 
+# EXPOSE 8080
 ENTRYPOINT [ "python", "batch_processor.py"]
