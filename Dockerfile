@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM amazon/aws-lambda-python:3.9
 
 # Create app directory
 WORKDIR /app
