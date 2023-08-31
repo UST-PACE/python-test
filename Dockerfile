@@ -1,5 +1,5 @@
 FROM amazon/aws-lambda-python:3.9
-ENV PIP_NO_CACHE_DIR=1
+#ENV PIP_NO_CACHE_DIR=1
 
 # Create app directory
 WORKDIR /app
