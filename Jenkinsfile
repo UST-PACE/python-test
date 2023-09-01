@@ -6,6 +6,7 @@ library identifier: 'jenkins-shared-library@main', retriever: modernSCM(
 kanikoPythonTest{
   gitCredentialsId = 'scm-cred-id'
   gitBranch = "main"
+  codeRating = 8.0
 	imageName = "python-image"
 	//registryRepo = "test-python"
   techName = "python"
