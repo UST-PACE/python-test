@@ -1,10 +1,10 @@
 library identifier: 'jenkins-shared-library@main', retriever: modernSCM(
   [$class: 'GitSCMSource',
    remote: 'https://github.com/UST-PACE/pace_jenkins_shared_library.git',
-   credentialsId: 'scm-cred-id'])
+   credentialsId: 'GITHUB_CREDS'])
 
 kanikoPythonTest{
-  gitCredentialsId = 'scm-cred-id'
+  gitCredentialsId = 'GITHUB_CREDS'
   gitBranch = "main"
   codeRating = 8.0
 	imageName = "python-image"
